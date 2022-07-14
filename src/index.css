@@ -4,7 +4,7 @@
 
 * {
   box-sizing: border-box;
-  user-select:none;
+  user-select: none;
 }
 
 .App {
@@ -18,15 +18,16 @@
   width: 230px;
   height: 100%
 }
+
 .App-header {
   width: calc(100vw - 230px);
   height: 51px;
-  background-color:#f6f6f6;
+  background-color: #f6f6f6;
   border-bottom: 1px solid #ddd;
 }
 
 .App-right {
-  overflow:scroll;
+  overflow: scroll;
   width: calc(100vw - 230px);
   height: calc(100vh - 51px);
 }
@@ -90,132 +91,152 @@
   text-align: center;
 }
 
-.App-left{
-  width:230px;
-  height:100vh;
-  background-color:#3c4852;
+.App-left {
+  width: 230px;
+  height: 100vh;
+  background-color: #3c4852;
   position: relative;
 }
-.App-left .select{
-    background-color: #3c4852;
-    line-height: 50px;
-    text-align: center;
-    width: 230px;
-    height:51px;
-    border-bottom:1px solid rgb(89 99 107);
- 
+
+.App-left .select {
+  background-color: #3c4852;
+  line-height: 50px;
+  text-align: center;
+  width: 230px;
+  height: 51px;
+  border-bottom: 1px solid rgb(89 99 107);
+
 }
-.logo-lg-title{
+
+.logo-lg-title {
   font-size: 20px;
   font-weight: 300;
   color: #fff;
   position: relative;
 }
-.logo-lg-title span{
+
+.logo-lg-title span {
   position: absolute;
-  top:8px;
-  left:143px;
+  top: 8px;
+  left: 143px;
 }
-.App-left .line{
-  padding-left:20px;
-  font-size:12px;
-  color:#707070;
-  background-color:#2e343c
+
+.App-left .line {
+  padding-left: 20px;
+  font-size: 12px;
+  color: #707070;
+  background-color: #2e343c
 }
-.App-left .data{
-    color:#a2b5b9;
-    line-height: 40px;
-    padding-left: 20px;
+
+.App-left .data {
+  color: #a2b5b9;
+  line-height: 40px;
+  padding-left: 20px;
 }
-.App-left .data:hover
-{
-background-color:#313A42;
+
+.App-left .data:hover {
+  background-color: #313A42;
 }
-.App-left .isActive{
-  background-color:#252C30;
+
+.App-left .isActive {
+  background-color: #252C30;
 }
-.App-left .state{
-  display:flex;
+
+.App-left .state {
+  display: flex;
 }
-.App-left .state div:first-child{
-  width:150px
+
+.App-left .state div:first-child {
+  width: 150px
 }
-.App-left .state div:nth-child(2){
-  color:#fff;
-  border-radius:4px;
-  font-size:12px;
-  height:17px;
-  width:45px;
-  margin-top:12px;
-  padding-left:7px;
+
+.App-left .state div:nth-child(2) {
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  height: 17px;
+  width: 45px;
+  margin-top: 12px;
+  padding-left: 7px;
   line-height: 17px;
   overflow: hidden;
 }
+
 .setserverlist ul {
-  line-height:25px;
+  line-height: 25px;
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
+
 .show ul {
-  line-height:25px;
+  line-height: 25px;
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
-.setserverlist{
+
+.setserverlist {
   position: absolute;
   text-align: center;
-  background-color:#ffffff;
+  background-color: #ffffff;
   width: 90%;
   border-radius: 5px;
-  box-shadow: 0px 6px 5px rgba(0,0,0,0);
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0);
   display: none;
 }
-.show{
+
+.show {
   position: absolute;
   text-align: center;
-  background-color:#ffffff;
+  background-color: #ffffff;
   width: 90%;
   border-radius: 5px;
-  box-shadow: 0px 6px 5px rgba(0,0,0,0);
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0);
   display: block;
 }
-.setserverlist ul li a span{
-  font-size:14px;
+
+.setserverlist ul li a span {
+  font-size: 14px;
   color: #777777;
 }
-.show ul li a span{
-  font-size:14px;
+
+.show ul li a span {
+  font-size: 14px;
   color: #777777;
 }
-.clicklogo ~ul{
-  display:block;
+
+.clicklogo~ul {
+  display: block;
 }
+
 .data:focus-within {
-  background-color:#252C30;
-	color: #dfdfdf;
+  background-color: #252C30;
+  color: #dfdfdf;
 }
-.data{
-  display:block;
+
+.data {
+  display: block;
 }
-.data span{
+
+.data span {
   margin-right: 8px;
 }
 
-.notconnected{
-  background-color:#dd4b39;
-  width:51px!important;
+.notconnected {
+  background-color: #dd4b39;
+  width: 51px !important;
 }
-.connected{
-  background-color:#03851d;
-  width:51px!important
+
+.connected {
+  background-color: #03851d;
+  width: 51px !important
 }
 
 
 
 .new-task-title input {
-  display:inline-block;
+  display: inline-block;
   width: 20px;
   height: 20px;
 }
@@ -223,160 +244,124 @@ background-color:#313A42;
 
 
 .new-task-title {
-    color:#aaaaaa;
-    display: flex;
-    height:42px;
-    border-bottom:1px dotted #ddd
-  }
-.new-task-title div{
-  padding:10px 15px;
-  
+  color: #aaaaaa;
+  display: flex;
+  height: 42px;
+  border-bottom: 1px dotted #ddd
 }
-  .new-task-title div:nth-child(1) {
-    width: 58px;
-    height: 42px;
-    color:#208fe5;
-    border-bottom: 3px solid #208fe5;
-  }
-  .new-task-title div:nth-child(2) {
-    width: 58px;
-    height: 42px;
-    /* border-bottom: 3px solid blue; */
-  }
-  .blue{
-    border-bottom: 3px solid #208fe5;
-  }
 
-  .new-task-title div.notblue {
-    color:#aaaaaa;
-    border-bottom: 0px solid #208fe5;
-  }
-  .new-task-title div.notblue a {
-    color:#aaaaaa;
-    border-bottom: 0px solid #208fe5;
-  }
+.new-task-title div {
+  padding: 10px 15px;
 
-  .new-task-title div:nth-child(3) {
-    width: 1px;
-    height: 20px;
-
-  }
-  /* .new-task-title div:nth-child(4) {
-   border-radius: 5px;
-    width: 37px;
-    height: 40px;
-    margin-right:10px
-  }
-  .new-task-title div:nth-child(4) a {
-    display:inline-block;
-   border-radius: 5px;
-    width: 37px;
-    height: 30px;
-    background:#f4f4f4;
-    margin-right:5px;
-    border:1px solid #ddd;
-    margin-left:-10px;
-    margin-top:-5px;
-    padding:5px 10px
-  } */
-  .new-task-title div:nth-child(4){
-    /* border-radius: 3px;
-    width: 80px;
-    height: 30px;
-    padding-top: 10px; */
-  }
-  
-  .new-task-title div:nth-child(3) span{
-    margin-left: -12px
-  }
-
-  .new-task-title div:nth-child(4) a {
-    font-size: 12px;
-    display: inline-block;
-    border-radius: 4px;
-    width: 62px;
-    height: 22px;
-
-    border: 1px solid #ddd;
-    margin-left: -6px;
-    margin-top: -5px;
-    padding: 1px 5px;
-    color: #aaaaaa;
 }
-.havelinks a{
-  background:#00a65a;
+
+.new-task-title div:nth-child(1) {
+  width: 58px;
+  height: 42px;
+  color: #208fe5;
+  border-bottom: 3px solid #208fe5;
+}
+
+.new-task-title div:nth-child(2) {
+  width: 58px;
+  height: 42px;
+  /* border-bottom: 3px solid blue; */
+}
+
+.blue {
+  border-bottom: 3px solid #208fe5;
+}
+
+.new-task-title div.notblue {
+  color: #aaaaaa;
+  border-bottom: 0px solid #208fe5;
+}
+
+.new-task-title div.notblue a {
+  color: #aaaaaa;
+  border-bottom: 0px solid #208fe5;
+}
+
+.new-task-title div:nth-child(3) {
+  width: 1px;
+  height: 20px;
+
+}
+
+
+.new-task-title div:nth-child(3) span {
+  margin-left: -12px
+}
+
+.new-task-title div:nth-child(4) a {
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 4px;
+  width: 62px;
+  height: 22px;
+
+  border: 1px solid #ddd;
+  margin-left: -6px;
+  margin-top: -5px;
+  padding: 1px 5px;
+  color: #aaaaaa;
+}
+
+.havelinks a {
+  background: #00a65a;
   color: #ffffff !important
 }
 
 
-.new-task-table{
-  height:260px;
+.new-task-table {
+  height: 260px;
 }
-.new-task-hint{
-  height:20px;
-  margin-top:10px;
-  margin-bottom:10px;
+
+.new-task-hint {
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 10px;
 }
-.new-task-link textarea{
+
+.new-task-link textarea {
   margin-left: 10px;
-  
-  font-size:14px;
-  width:98%;
-  height:200px;
-  border:1px  solid #ddd;
-  color:#555
+
+  font-size: 14px;
+  width: 98%;
+  height: 200px;
+  border: 1px solid #ddd;
+  color: #555
 }
 
 
-.new-task-link textarea{
+.new-task-link textarea {
   outline-color: #3c8dbc;
   box-shadow: none;
 }
 
-/* .options{
-  display:none
+
+.option-dir {
+  height: 51px;
+  display: flex;
+  padding-top: 15px;
+  border-top: 1px solid #ddd
 }
 
-#selectThatOption{
-  display:none
+.option-name {
+  width: 25%;
 }
-#selectOption{
-  display:inline-block;
-}
-#selectOption .options-title input{
-  display:inline-block
-} */
 
-/* .options-title{
-  
-  
-  height:30px;
-  display:flex;
-  line-height:30px;
-  
-} */
-/* .options-title div{
-  padding-right:5px;
-} */
+.option-input {
+  display: inline-block;
+  min-width: 300px
+}
 
-.option-dir{
-  height:51px;
-  display:flex;
-  padding-top:15px;
-  border-top:1px solid #ddd
-}
-.option-name{
-  width:25%;
-}
-.option-input{
-  display:inline-block;
-  min-width:300px
-}
 div.options-content .option-dir:nth-child(even) {
-    background: #f6f6f6;
+  background: #f6f6f6;
 }
-.options-content-section:hover{
+
+.options-content-section:hover {
   background: #f6f6f6
 }
 
@@ -392,28 +377,29 @@ div.options-content .option-dir:nth-child(even) {
 }
 
 .new {
-  color:#707070;
+  color: #707070;
   padding: 15px 10px;
   width: 68.96px;
   height: 50px;
 }
-.new a{
-  color:#707070;
+
+.new a {
+  color: #707070;
 }
 
 
 .divider {
-  
+
   margin: 0px 4px;
   padding-top: 15px;
-    margin-left: -1px;
+  margin-left: -1px;
 }
 
 .header div:nth-child(3) {
   height: 32.58px;
   width: 50px;
   padding-top: 15px;
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .header div:nth-child(3) a {
@@ -445,139 +431,162 @@ div.options-content .option-dir:nth-child(even) {
 }
 
 .header div:nth-child(5) span {
-  
+
   margin-left: 13px;
 }
+
 .header div:nth-child(8) span {
 
   margin-left: 10px;
 }
-.header div:nth-child(8)  {
+
+.header div:nth-child(8) {
 
   margin-left: -2px;
   padding-top: 15px;
- 
+
 }
 
 .all {
   width: 34.86px;
   height: 50px;
   padding: 15px 9px;
-  cursor:pointer;
+  cursor: pointer;
 }
-.havetask{
-  cursor:pointer;
+
+.havetask {
+  cursor: pointer;
 }
+
 .down {
   width: 34.86px;
   height: 50px;
   padding-top: 16px;
-    margin-left: 6px;
-    cursor:pointer;
+  margin-left: 6px;
+  cursor: pointer;
 }
 
 .help {
   width: 33.73px;
   height: 50px;
   padding: 15px 1px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 
 .header span {
   color: #707070;
 }
+
 .disabled span {
   color: #ccc;
   pointer-events: none;
-}  
+}
+
 /* header的css样式结束 */
 
 /* server的css样式开始 */
-.serverlist{
-  list-style:none;
-  margin:0;
- 
-  display:flex;
-  padding-left:10px;
-  height:42px;
-  background:white;
+.serverlist {
+  list-style: none;
+  margin: 0;
+
+  display: flex;
+  padding-left: 10px;
+  height: 42px;
+  background: white;
   border-bottom: 1px dotted rgb(221, 221, 221);
 }
-.serverlist li{
-  line-height:42px;
- 
-}
-.pointer-cursor{
-    display: block;
-    max-width: 150px;
-    height: 42px;
-    line-height:42px;
-    padding-right:10px;
-    padding-left:10px;
-}
-.nav-tab{
-  max-width:132px;
-  height:19px;
-  line-height:19px;
-  padding-left:10px;
-  font-size:14px;
-  color:#aaaaaa;
-  overflow: hidden; /*隐藏*/
-	white-space: nowrap;  /*不换行*/
-	text-overflow: ellipsis;  /* 超出部分省略号 */
+
+.serverlist li {
+  line-height: 42px;
 
 }
-.add-server{
-  width:21px;
-}
-.global{
-  margin-left:10px;
-  width:58px;
+
+.pointer-cursor {
+  display: block;
+  max-width: 150px;
+  height: 42px;
+  line-height: 42px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.server-content-box  div{
-  padding-left:10px;
-  height:50px;
+.nav-tab {
+  max-width: 132px;
+  height: 19px;
+  line-height: 19px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #aaaaaa;
+  overflow: hidden;
+  /*隐藏*/
+  white-space: nowrap;
+  /*不换行*/
+  text-overflow: ellipsis;
+  /* 超出部分省略号 */
+
+}
+
+.add-server {
+  width: 21px;
+}
+
+.global {
+  margin-left: 10px;
+  width: 58px;
+}
+
+.server-content-box div {
+  padding-left: 10px;
+  height: 50px;
   border-bottom: 1px solid rgb(221, 221, 221);
   line-height: 50px;
 }
+
 .server-li {
   display: flex;
 }
+
 .server-li div {
-  width:30%;
+  width: 30%;
 }
-.server-li input{
-  display:inline-block;
+
+.server-li input {
+  display: inline-block;
   margin-top: 7px;
-  height:36px;
-  width:69%
+  height: 36px;
+  width: 69%
 }
+
 div.server-content-box .server-li:nth-child(odd) {
-    background: #f6f6f6;
+  background: #f6f6f6;
 }
-.hide{
+
+.hide {
   display: none;
 }
+
 /* server的css样式结束 */
 
 /* settings的样式开始 */
-.form-group div{
+.form-group div {
   display: inline-block;
 }
 
-.form-group-name{
+.form-group-name {
   background-color: rgb(4, 200, 50);
   height: 50px;
-  width:25%
-}
-.form-group-line{
   width: 25%
 }
-.form-groupinput{
+
+.form-group-line {
+  width: 25%
+}
+
+.form-groupinput {
   width: 50%
 }
+
 /* settings的样式结束 */
 
 /* appright样式 */
@@ -585,35 +594,41 @@ div.server-content-box .server-li:nth-child(odd) {
 .task-name input {
   display: none;
 }
+
 .clickli input {
   display: inline
 }
+
 div#task-table #task-table-content:nth-child(even) {
   background: #f6f6f6;
 }
+
 #task-table-content {
-  padding-left:15px;
-  padding-right:15px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
 }
+
 #task-table-title {
-  padding-left:15px;
-  padding-right:15px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   font-size: 14px;
-  height:25px;
-  line-height:25px;
-  font-size:12px;
-  background:white;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  background: white;
 }
-#task-table #task-table-content{
+
+#task-table #task-table-content {
   border-top: 1px solid rgb(221 221 221);
-  height:55.64px;
+  height: 55.64px;
 }
 
 li.add-server {
   padding-left: 30px;
 }
-.pointer-cursor span:nth-child(2){
+
+.pointer-cursor span:nth-child(2) {
   color: #777777
 }

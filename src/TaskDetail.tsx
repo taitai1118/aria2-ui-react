@@ -11,7 +11,7 @@ export default function TaskDetail({client}: IProps) {
     // debugger
     // @ts-ignore
     var task = await client.tellStatus(params.gid)
-    console.log(task)
+    // console.log(task)
     return task
   }, []))
 

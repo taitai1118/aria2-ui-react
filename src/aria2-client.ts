@@ -24,7 +24,7 @@ export default class Aria2Client extends EventEmitter {
         resolve(this)
       })
       this.ws.addEventListener('error', e => {
-        reject(this)
+        reject(e)
       })
     })
 
@@ -43,6 +43,10 @@ export default class Aria2Client extends EventEmitter {
       }
     })
 
+  }
+
+  destroy() {
+    this.ws?.close()
   }
 
   ready() {

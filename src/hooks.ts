@@ -29,7 +29,30 @@ export function useInput(init = "") {
 
   return ret;
 }
+export function useInput1(val?: any) {
+  let [value, setValue] = useState(val)
+  
+  function onChange(e:any) {
+    if (e.target) {
+      // @ts-ignore
+      setValue(e.target.value)
+    } else {
+      setValue(e)
+    }
+  }
 
+  function clear() {
+    setValue('')
+  }
+
+  return {
+    clear,
+    bind: {
+      onChange,
+      value,
+    }
+  }
+}
 export function useTasks(client: Aria2Client, interval: number, state: 'Active' | 'Waiting' | 'Stopped') {
   var [tasks, setTasks] = useState<any[]>([])
 
@@ -51,7 +74,7 @@ export function useTasks(client: Aria2Client, interval: number, state: 'Active' 
       // @ts-ignore
       client['tell' + state](0, 100).then(tasks => {
         setTasks(tasks)
-        console.log(tasks)
+        // console.log(tasks)
       })
     })
   }, [])
@@ -118,8 +141,26 @@ export const useAsync = (asyncFunction: () => Promise<any>, immediate = true) =>
   };
 };
 
-export const SelectedTasksContext = React.createContext<{selectedTasks: any[], setSelectedTasks: Function}>({
+export const SelectedTasksContext = React.createContext<{
+  selectedTasks: any[],
+   setSelectedTasks: Function,
+   tasksType:any,
+   setTasksType:Function,
+   optionSetting: Boolean
+   setOptionSetting: Function
+   uriOption: Object
+   setUriOption: Function
+
+
+}>({
   selectedTasks: [],
   setSelectedTasks: (tasks: any[]) => { },
+  tasksType:'',
+  setTasksType: (type: any) => {},
+  optionSetting: true,
+  setOptionSetting: () => {},
+  uriOption: {},
+  setUriOption: () => {},
 })
 SelectedTasksContext.displayName = 'SelectedTasksContext'
+

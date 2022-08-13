@@ -11,7 +11,7 @@ export default class Aria2Client extends EventEmitter {
   callbacks: {
     [id: number]: (data: any) => void
   } = {}
-
+  //ip地址
   constructor(public ip: string = '127.0.0.1', public port: number | string, public secret: string) {
     super()
     var url = `ws://${ip}:${port}/jsonrpc`

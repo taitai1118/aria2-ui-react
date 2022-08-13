@@ -49,7 +49,7 @@ function App() {
   var [aria2, setAria2] = useState(
     useMemo(() => {
       var server = aria2Servers[currentServerIdx]
-      var aria2 = new Aria2Client(server.ip, server.port, server.secret)
+      var aria2 = new Aria2Client(server?.ip, server?.port, server?.secret)
       return aria2
     }, [])
   )

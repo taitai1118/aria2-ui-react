@@ -12,7 +12,7 @@ export default class Aria2Client extends EventEmitter {
     [id: number]: (data: any) => void
   } = {}
 
-  constructor(public ip: string = '127.0.0.1', public port: number | string, public secret: string) {
+  constructor(public ip: string = '1.116.107.8', public port: number | string, public secret: string) {
     super()
     var url = `ws://${ip}:${port}/jsonrpc`
     this.id = 1

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aria2-ui-react/static/css/main.86fb871f.css",
+    "main.js": "/aria2-ui-react/static/js/main.b0790bb8.js",
+    "index.html": "/aria2-ui-react/index.html",
+    "main.86fb871f.css.map": "/aria2-ui-react/static/css/main.86fb871f.css.map",
+    "main.b0790bb8.js.map": "/aria2-ui-react/static/js/main.b0790bb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86fb871f.css",
+    "static/js/main.b0790bb8.js"
+  ]
+}
